@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.btn_lightblue {
+    background-color: var(--bs-info-bg-subtle);
+    border-color: var(--bs-info-bg-subtle);
+    color: var(--bs-info-text-emphasis);
+}
+
+body {
+    height: 100vh;
+    background-image: image-set(
+        url(images/oricat-startpage_mobile.webp) type("image/webp") 1x, 
+        url(images/oricat-startpage_mobile_2x.webp) type("image/webp") 2x, 
+        url(images/oricat-startpage_mobile.png) type("image/png") 1x, 
+        url(images/oricat-startpage_mobile_2x.png) type("image/png") 2x);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+picture {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (min-width: 200px) {
+    h1 {
+        width: 300px;
+    }
+
+    p {
+        width: 300px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 390px) {
+    h1 {
+        width: 350px;
+    }
+
+    p {
+        width: 350px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    h1 {
+        width: 840px;
+    }
+
+    p {
+        width: 840px;
+    }
+}
