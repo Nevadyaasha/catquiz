@@ -20,8 +20,7 @@ input[name="question2"],
 input[name="question6pair1"],
 input[name="question6pair2"],
 input[name="question6pair3"],
-input[name="question6pair4"]
- {
+input[name="question6pair4"] {
     display: none;
 }
 
@@ -34,13 +33,18 @@ label:has(input[name="question2"]:checked) .flag-card_sizing {
 label:has(input[name="question6pair1"]:checked) .two-choises-cards_sizing,
 label:has(input[name="question6pair2"]:checked) .two-choises-cards_sizing,
 label:has(input[name="question6pair3"]:checked) .two-choises-cards_sizing,
-label:has(input[name="question6pair4"]:checked) .two-choises-cards_sizing
- {
+label:has(input[name="question6pair4"]:checked) .two-choises-cards_sizing {
     --bs-border-color: #0dcaf0;
     --bs-border-width: 3px;
 }
 
+h1 {
+    font-weight: bold;
+}
 
+.btn {
+    --bs-btn-font-weight: 700;
+}
 
 @media (min-width: 300px) {
 
