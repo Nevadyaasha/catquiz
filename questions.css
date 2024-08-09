@@ -1,0 +1,124 @@
+.btn_lightblue {
+    background-color: var(--bs-info-bg-subtle);
+    border-color: var(--bs-info-bg-subtle);
+    color: var(--bs-info-text-emphasis);
+}
+
+.form-check-input:checked {
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+
+.form-check-input:focus {
+    border-color: #CFF4FC;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #CFF4FC;
+
+}
+
+input[name="question2"],
+input[name="question6pair1"],
+input[name="question6pair2"],
+input[name="question6pair3"],
+input[name="question6pair4"] {
+    display: none;
+}
+
+label:has(input[name="question2"]:checked) .flag-card_sizing {
+    --bs-border-color: #0dcaf0;
+    --bs-border-width: 3px;
+}
+
+
+label:has(input[name="question6pair1"]:checked) .two-choises-cards_sizing,
+label:has(input[name="question6pair2"]:checked) .two-choises-cards_sizing,
+label:has(input[name="question6pair3"]:checked) .two-choises-cards_sizing,
+label:has(input[name="question6pair4"]:checked) .two-choises-cards_sizing {
+    --bs-border-color: #0dcaf0;
+    --bs-border-width: 3px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.btn {
+    --bs-btn-font-weight: 700;
+}
+
+@media (min-width: 300px) {
+
+    .question_sized {
+        height: 100vh;
+    }
+
+    .answers-field_sized {
+        width: 300px;
+    }
+
+    .answer-sized {
+        width: 100%;
+    }
+
+    .flag-card_sizing {
+        width: 136px;
+        height: 90px;
+    }
+
+    .two-choises-cards_sizing {
+        width: 136px;
+        height: 50px;
+    }
+
+
+    .flag_sizing {
+        width: 75px;
+    }
+
+
+    .cat-picture_sizing {
+        width: 120px;
+    }
+
+    h1 {
+        width: 300px;
+    }
+
+    p {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 390px) {
+
+    .flag-card_sizing {
+        width: 152px;
+        height: 100px;
+    }
+
+    .flag_sizing {
+        width: 80px;
+    }
+
+    .cat-picture_sizing {
+        width: 150px;
+    }
+}
+
+
+@media(min-width: 1024px) {
+    body {
+        background-color: var(--bs-info-bg-subtle);
+    }
+
+    .flag_sizing {
+        width: 120px;
+    }
+
+    .answers-field_sized {}
+
+    .cat-picture_sizing {
+        width: 180px;
+    }
+
+}
