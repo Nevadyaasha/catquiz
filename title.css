@@ -6,6 +6,14 @@
     color: var(--bs-info-text-emphasis);
 }
 
+h1 {
+    font-weight: bold;
+}
+
+.btn {
+    --bs-btn-font-weight: 700;
+}
+
 body {
     height: 100vh;
     background-image: image-set(
