@@ -48,6 +48,10 @@ h1 {
     display: none;
 }
 
+.result_visible {
+    display: revert;
+}
+
 @media (min-width: 300px) {
     h1 {
         width: 300px;
