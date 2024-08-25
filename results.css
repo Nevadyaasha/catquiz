@@ -48,7 +48,11 @@ h1 {
     display: none;
 }
 
-.result_visible {
+.result1_visible {
+    display: revert;
+}
+
+.result2_visible {
     display: revert;
 }
 
