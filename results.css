@@ -19,22 +19,20 @@ h1 {
 }
 
 .result1background {
-    background-image: image-set(
-        url(images/results1_mobile.webp) type("image/webp") 1x, 
-        url(images/results1_mobile_2x.webp) type("image/webp") 2x, 
-        url(images/results1_mobile.png) type("image/png") 1x, 
-        url(images/results1_mobile_2x.png) type("image/png") 2x);
+    background-image: image-set(url(images/results1_mobile.webp) type("image/webp") 1x,
+            url(images/results1_mobile_2x.webp) type("image/webp") 2x,
+            url(images/results1_mobile.png) type("image/png") 1x,
+            url(images/results1_mobile_2x.png) type("image/png") 2x);
     background-position: center bottom;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .result2background {
-    background-image: image-set(
-        url(images/results2_mobile.webp) type("image/webp") 1x, 
-        url(images/results2_mobile_2x.webp) type("image/webp") 2x, 
-        url(images/results2_mobile.png) type("image/png") 1x, 
-        url(images/results2_mobile_2x.png) type("image/png") 2x);
+    background-image: image-set(url(images/results2_mobile.webp) type("image/webp") 1x,
+            url(images/results2_mobile_2x.webp) type("image/webp") 2x,
+            url(images/results2_mobile.png) type("image/png") 1x,
+            url(images/results2_mobile_2x.png) type("image/png") 2x);
     background-position: center bottom;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -56,20 +54,17 @@ h1 {
     display: revert;
 }
 
-@media (min-width: 300px) {
-    h1 {
-        width: 300px;
-    }
-
-    p {
-        width: 300px;
-    }
-
-    img {
-        max-width: 100%;
-    }
+h1 {
+    width: 300px;
 }
 
+p {
+    width: 300px;
+}
+
+img {
+    max-width: 100%;
+}
 
 @media (min-width: 390px) {
     h1 {

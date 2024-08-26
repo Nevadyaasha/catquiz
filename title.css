@@ -34,7 +34,6 @@ img {
     max-width: 100%;
 }
 
-@media (min-width: 200px) {
     h1 {
         width: 300px;
     }
@@ -46,7 +45,6 @@ img {
     img {
         max-width: 100%;
     }
-}
 
 
 @media (min-width: 390px) {
