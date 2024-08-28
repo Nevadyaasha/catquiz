@@ -46,47 +46,44 @@ h1 {
     --bs-btn-font-weight: 700;
 }
 
-@media (min-width: 300px) {
+.question_sized {
+    height: 100vh;
+}
 
-    .question_sized {
-        height: 100vh;
-    }
+.answers-field_sized {
+    width: 300px;
+}
 
-    .answers-field_sized {
-        width: 300px;
-    }
+.answer-sized {
+    width: 100%;
+}
 
-    .answer-sized {
-        width: 100%;
-    }
+.flag-card_sizing {
+    width: 136px;
+    height: 90px;
+}
 
-    .flag-card_sizing {
-        width: 136px;
-        height: 90px;
-    }
-
-    .two-choises-cards_sizing {
-        width: 136px;
-        height: 50px;
-    }
+.two-choises-cards_sizing {
+    width: 136px;
+    height: 50px;
+}
 
 
-    .flag_sizing {
-        width: 75px;
-    }
+.flag_sizing {
+    width: 75px;
+}
 
 
-    .cat-picture_sizing {
-        width: 120px;
-    }
+.cat-picture_sizing {
+    width: 120px;
+}
 
-    h1 {
-        width: 300px;
-    }
+h1 {
+    width: 300px;
+}
 
-    p {
-        max-width: 300px;
-    }
+p {
+    max-width: 300px;
 }
 
 @media (min-width: 390px) {
