@@ -46,6 +46,12 @@ img {
         max-width: 100%;
     }
 
+.button-center {
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 @media (min-width: 390px) {
     h1 {
@@ -59,11 +65,40 @@ img {
 
 
 @media (min-width: 1024px) {
+
+    body {
+        background-image: image-set(
+            url(images/oricat-startpage_desktop.webp) type("image/webp") 1x, 
+            url(images/oricat-startpage_desktop_2x.webp) type("image/webp") 2x, 
+            url(images/oricat-startpage_desktop.png) type("image/png") 1x, 
+            url(images/oricat-startpage_desktop_2x.png) type("image/png") 2x);
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        padding-top: 60px;
+    }
+
     h1 {
-        width: 840px;
+        width: 500px;
     }
 
     p {
-        width: 840px;
+        width: 500px;
     }
+
+}
+
+@media (min-width: 1440px) {
+body {
+    padding-top: 120px;
+}
+
+    h1 {
+        width: 800px;
+    }
+
+    p {
+        width: 800px;
+    }
+
 }

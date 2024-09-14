@@ -86,6 +86,18 @@ p {
     max-width: 300px;
 }
 
+.breed-card_position {
+    flex-direction: row;
+}
+
+.all-breeds-card_position {
+   flex-direction: column;
+}
+
+.flag-card_sizing {
+    margin: 0 0.5rem;
+}
+
 @media (min-width: 390px) {
 
     .flag-card_sizing {
@@ -106,16 +118,67 @@ p {
 @media(min-width: 1024px) {
     body {
         background-color: var(--bs-info-bg-subtle);
+        padding-top: 152px;
+       }
+
+    .flag-cards_sizing {
+        max-width: 60%;
+        margin: 0 auto;
     }
 
+       .flag-card_sizing {
+        width: 225px;
+    }
     .flag_sizing {
         width: 120px;
     }
-
-    .answers-field_sized {}
 
     .cat-picture_sizing {
         width: 180px;
     }
 
+    .question_sized {
+        width: 960px;
+        height: 688px;
+        margin: auto;
+        border-radius: 1rem;
+        padding-top: 80px;
+    }
+
+    .question_bg-color {
+        background-color: #ffffff ;   
+    }
+    h1 {
+        width: 720px;
+    }
+    p {
+        width: 720px;
+    }
+
+    .answers-field_sized {
+        width: 720px;
+    }
+
+    .flag-card_sizing {
+        width: 225px;
+        height: 150px;
+    }
+
+    .breed-card_position {
+        flex-direction: column;
+    }
+
+    .all-breeds-card_position {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .cat-breed-form_size {
+        min-width: 40%;
+    }
+
+    .two-choises-cards_sizing {
+        width: 240px;
+        height: 50px;
+    }
 }
