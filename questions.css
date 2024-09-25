@@ -38,6 +38,11 @@ label:has(input[name="question6pair4"]:checked) .two-choises-cards_sizing {
     --bs-border-width: 3px;
 }
 
+body {
+    overflow: hidden;
+}
+
+
 h1 {
     font-weight: bold;
 }
@@ -46,9 +51,10 @@ h1 {
     --bs-btn-font-weight: 700;
 }
 
-.question_sized {
-    height: 100vh;
+.button_hidden {
+    display: none;
 }
+
 
 .answers-field_sized {
     width: 300px;
@@ -91,12 +97,22 @@ p {
 }
 
 .all-breeds-card_position {
-   flex-direction: column;
+    flex-direction: column;
 }
 
-.flag-card_sizing {
+/* .flag-card_sizing {
     margin: 0 0.5rem;
+} */
+
+.question-list {
+    display: flex;
+    width: 600%;
 }
+
+form {
+    max-width: 100%;
+}
+
 
 @media (min-width: 390px) {
 
@@ -118,17 +134,15 @@ p {
 @media(min-width: 1024px) {
     body {
         background-color: var(--bs-info-bg-subtle);
-        padding-top: 152px;
-       }
+        padding-top: 152px;     
+    }
+
 
     .flag-cards_sizing {
-        max-width: 60%;
+        max-width: 100%;
         margin: 0 auto;
     }
 
-       .flag-card_sizing {
-        width: 225px;
-    }
     .flag_sizing {
         width: 120px;
     }
@@ -139,18 +153,20 @@ p {
 
     .question_sized {
         width: 960px;
-        height: 688px;
+        height: 600px;
         margin: auto;
         border-radius: 1rem;
-        padding-top: 80px;
+        /* padding-top: 80px; */
     }
 
     .question_bg-color {
-        background-color: #ffffff ;   
+        background-color: #ffffff;
     }
+
     h1 {
         width: 720px;
     }
+
     p {
         width: 720px;
     }
@@ -160,7 +176,6 @@ p {
     }
 
     .flag-card_sizing {
-        width: 225px;
         height: 150px;
     }
 
