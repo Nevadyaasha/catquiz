@@ -1,8 +1,28 @@
-let nextQuestion = document.querySelectorAll(".btn_nextquestion");
 
-// МАССИВ - добавить к каждому
 
-nextQuestion.addEventListener("click", function (event) {
+let confirmButtons = document.querySelectorAll('.btn_confirm');
+let nextQuestionButtons = document.querySelectorAll('.btn_nextquestion');
+let questionList = document.querySelector('.question-list');
+let resultsButton = document.querySelector('.btn_results')
 
-        window.moveTo(100,0)
-})
+for (let i = 0; i < confirmButtons.length; i++) {
+    confirmButtons[i].onclick = function () {
+
+        if (i < (confirmButtons.length - 1) ) {
+            confirmButtons[i].classList.add('btn_hidden');
+            nextQuestionButtons[i].classList.remove('btn_hidden');
+        }
+
+        else {
+            confirmButtons[i].classList.add('btn_hidden');
+            resultsButton.classList.remove('btn_hidden')
+        }
+
+    }
+}
+
+for (let i = 0; i < nextQuestionButtons.length; i++) {
+    nextQuestionButtons[i].onclick = function () {
+        questionList.style.marginLeft = '-' + (i + 1) + '00%';
+    }
+}
