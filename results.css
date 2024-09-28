@@ -33,9 +33,10 @@ h1 {
             url(images/results2_mobile_2x.webp) type("image/webp") 2x,
             url(images/results2_mobile.png) type("image/png") 1x,
             url(images/results2_mobile_2x.png) type("image/png") 2x);
-    background-position: center bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
+            background-position: center bottom 20%;
+            background-size: 60%;
+            background-repeat: no-repeat;
+            padding-top: 60px;
 }
 
 .result1 {

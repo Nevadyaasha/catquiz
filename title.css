@@ -72,8 +72,8 @@ img {
             url(images/oricat-startpage_desktop_2x.webp) type("image/webp") 2x, 
             url(images/oricat-startpage_desktop.png) type("image/png") 1x, 
             url(images/oricat-startpage_desktop_2x.png) type("image/png") 2x);
-        background-position: center;
-        background-size: 80%;
+        background-position: right 20% bottom 20%;
+        background-size: 60%;
         background-repeat: no-repeat;
         padding-top: 60px;
     }
