@@ -4,6 +4,11 @@
     color: var(--bs-info-text-emphasis);
 }
 
+.text-success,
+.text-danger {
+    font-weight: bold;
+}
+
 .form-check-input:checked {
     background-color: #0dcaf0;
     border-color: #0dcaf0;
