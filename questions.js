@@ -92,6 +92,31 @@ for (let i = 0; i < confirmButtons.length; i++) {
                 score++;
             }
         }
+        else if (i === 3) {
+            let form = document.querySelector('[name="question4"]');
+            let allAnswers = form.querySelectorAll('select');
+            const solutions = ['3', '1', '4', '2'];
+            let questionFailed = false;
+
+            // form.children[0].classList.remove('border');
+
+
+            for (let k = 0; k < allAnswers.length; k++) {
+                // allAnswers[k].parentElement.classList.remove('border-bottom');
+                // allAnswers[k].parentElement.classList.add('border');
+                if (allAnswers[k].value !== solutions[k]) {
+                    questionFailed = true;
+                }
+                if (allAnswers[k].value === solutions[k]) {
+                    allAnswers[k].classList.add('border-success');
+                }
+                else 
+                    allAnswers[k].classList.add('border-danger');
+            }
+            if (!questionFailed) {
+                score++;
+            }
+        }
     }
 
 }
