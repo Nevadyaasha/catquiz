@@ -98,21 +98,40 @@ for (let i = 0; i < confirmButtons.length; i++) {
             const solutions = ['3', '1', '4', '2'];
             let questionFailed = false;
 
-            // form.children[0].classList.remove('border');
-
 
             for (let k = 0; k < allAnswers.length; k++) {
-                // allAnswers[k].parentElement.classList.remove('border-bottom');
-                // allAnswers[k].parentElement.classList.add('border');
                 if (allAnswers[k].value !== solutions[k]) {
                     questionFailed = true;
                 }
                 if (allAnswers[k].value === solutions[k]) {
                     allAnswers[k].classList.add('border-success');
                 }
-                else 
+                else
                     allAnswers[k].classList.add('border-danger');
             }
+            if (!questionFailed) {
+                score++;
+            }
+        }
+        else if (i === 4) {
+            let form = document.querySelector('[name="question5"]');
+            let allAnswers = form.querySelector('input');
+            let allAges = form.querySelectorAll('.age');
+            const solutions = ['12', '14', '16'];
+            let questionFailed = false;
+            if (!solutions.includes(allAnswers.value)) {
+                questionFailed = true;
+            }
+
+            for (let k = 0; k < allAges.length; k++) {
+                if (solutions.includes(allAges[k].innerText)) {
+                    allAges[k].classList.add('text-success');
+                }
+                else {
+                    allAges[k].classList.add('text-danger');
+                }
+            }
+
             if (!questionFailed) {
                 score++;
             }
