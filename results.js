@@ -10,3 +10,17 @@ if (score > 4) {
     result2.querySelector('h1').innerText += score;
     document.body.classList.add('result2background')
 }
+
+let prizeButtons = document.querySelectorAll('.btn_prize');
+const dialog = document.querySelector('dialog');
+
+for (let p = 0; p < prizeButtons.length; p++) {
+    prizeButtons[p].onclick = function () {
+        dialog.showModal();
+    }
+}
+
+const closeModal = dialog.querySelector('.btn_close-modal');
+closeModal.onclick = function () {
+    dialog.close();
+}
