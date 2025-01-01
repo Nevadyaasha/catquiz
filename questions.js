@@ -36,6 +36,7 @@ for (let i = 0; i < confirmButtons.length; i++) {
         else if (allAnswers[k].checked) {
           allAnswers[k].parentElement.classList.add('border-danger');
         }
+        allAnswers[k].disabled = true;
       }
       if (!questionFailed) {
         score++;
@@ -59,6 +60,7 @@ for (let i = 0; i < confirmButtons.length; i++) {
         else if (allAnswers[k].checked) {
           allAnswers[k].nextSibling.nextSibling.classList.add('border-danger');
         }
+        allAnswers[k].disabled = true;
       }
       if (!questionFailed) {
         score++;
@@ -85,6 +87,7 @@ for (let i = 0; i < confirmButtons.length; i++) {
         else if (allAnswers[k].checked) {
           allAnswers[k].parentElement.classList.add('border-danger');
         }
+        allAnswers[k].disabled = true;
       }
       if (!questionFailed) {
         score++;
@@ -104,8 +107,10 @@ for (let i = 0; i < confirmButtons.length; i++) {
         if (allAnswers[k].value === solutions[k]) {
           allAnswers[k].classList.add('border-success');
         }
-        else
+        else {
           allAnswers[k].classList.add('border-danger');
+        }
+        allAnswers[k].disabled = true;
       }
       if (!questionFailed) {
         score++;
@@ -128,6 +133,7 @@ for (let i = 0; i < confirmButtons.length; i++) {
         else {
           allAges[k].classList.add('text-danger');
         }
+        allAnswers.disabled = true;
       }
 
       if (!questionFailed) {
@@ -160,7 +166,7 @@ for (let i = 0; i < confirmButtons.length; i++) {
           option2.nextSibling.nextSibling.classList.add('border-danger');
           questionFailed = true;
         }
-
+        allAnswers[k].disabled = true;
       }
       if (!questionFailed) {
         score++;
