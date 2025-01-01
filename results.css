@@ -36,6 +36,7 @@ h1 {
     background-position: center bottom;
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-top: 60px;
 }
 
 .result1 {
@@ -47,7 +48,6 @@ h1 {
 }
 
 .result1_visible {
-
     display: revert;
 }
 
@@ -64,7 +64,7 @@ p {
 }
 
 img {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 @media (min-width: 390px) {
@@ -93,7 +93,7 @@ img {
                 url(images/results1_desktop.png) type("image/png") 1x,
                 url(images/results1_desktop_2x.png) type("image/png") 2x);
         background-position: bottom;
-        background-size: 80%;
+        background-size: 60%;
         background-repeat: no-repeat;
     }
 
@@ -103,7 +103,7 @@ img {
                 url(images/results2_desktop.png) type("image/png") 1x,
                 url(images/results2_desktop_2x.png) type("image/png") 2x);
         background-position: bottom;
-        background-size: 80%;
+        background-size: 60%;
         background-repeat: no-repeat;
     }
 
@@ -112,13 +112,4 @@ img {
         body {
             padding-top: 120px;
         }
-
-        h1 {
-            width: 800px;
-        }
-
-        p {
-            width: 800px;
-        }
-
     }

@@ -4,6 +4,11 @@
     color: var(--bs-info-text-emphasis);
 }
 
+.text-success,
+.text-danger {
+    font-weight: bold;
+}
+
 .form-check-input:checked {
     background-color: #0dcaf0;
     border-color: #0dcaf0;
@@ -46,8 +51,8 @@ h1 {
     --bs-btn-font-weight: 700;
 }
 
-.question_sized {
-    height: 100vh;
+.btn_hidden {
+    display: none;
 }
 
 .answers-field_sized {
@@ -73,7 +78,6 @@ h1 {
     width: 75px;
 }
 
-
 .cat-picture_sizing {
     width: 120px;
 }
@@ -91,11 +95,26 @@ p {
 }
 
 .all-breeds-card_position {
-   flex-direction: column;
+    flex-direction: column;
 }
 
 .flag-card_sizing {
     margin: 0 0.5rem;
+} 
+
+.question-list {
+    display: flex;
+    width: 600%;
+    margin-left: 0%;
+}
+
+.question_sized {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.question-area {
+    overflow-x: hidden;
 }
 
 @media (min-width: 390px) {
@@ -114,21 +133,34 @@ p {
     }
 }
 
+    .flag-cards_sizing {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+
+/* @media(min-width:768px) {
+    .breed-card_position {
+        flex-direction: column;
+    }
+
+    .all-breeds-card_position {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .cat-breed-form_size {
+        min-width: 40%;
+    }
+
+} */
 
 @media(min-width: 1024px) {
     body {
         background-color: var(--bs-info-bg-subtle);
-        padding-top: 152px;
-       }
-
-    .flag-cards_sizing {
-        max-width: 60%;
-        margin: 0 auto;
+        padding-top: 80px;     
     }
 
-       .flag-card_sizing {
-        width: 225px;
-    }
     .flag_sizing {
         width: 120px;
     }
@@ -139,18 +171,20 @@ p {
 
     .question_sized {
         width: 960px;
-        height: 688px;
+        height: 600px;
         margin: auto;
         border-radius: 1rem;
-        padding-top: 80px;
+        /* padding-top: 80px; */
     }
 
     .question_bg-color {
-        background-color: #ffffff ;   
+        background-color: #ffffff;
     }
+
     h1 {
         width: 720px;
     }
+
     p {
         width: 720px;
     }
@@ -160,7 +194,6 @@ p {
     }
 
     .flag-card_sizing {
-        width: 225px;
         height: 150px;
     }
 
@@ -180,5 +213,10 @@ p {
     .two-choises-cards_sizing {
         width: 240px;
         height: 50px;
+    }
+
+    .two-choises-answers-field {
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
