@@ -181,3 +181,6 @@ for (let i = 0; i < nextQuestionButtons.length; i++) {
     questionList.style.marginLeft = '-' + (i + 1) + '00%';
   }
 }
+resultsButton.onclick = function () {
+  location.href = 'results.html?score=' + score;
+}
