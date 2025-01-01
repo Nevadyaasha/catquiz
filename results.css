@@ -33,10 +33,10 @@ h1 {
             url(images/results2_mobile_2x.webp) type("image/webp") 2x,
             url(images/results2_mobile.png) type("image/png") 1x,
             url(images/results2_mobile_2x.png) type("image/png") 2x);
-            background-position: center bottom 20%;
-            background-size: 60%;
-            background-repeat: no-repeat;
-            padding-top: 60px;
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 60px;
 }
 
 .result1 {
@@ -48,7 +48,6 @@ h1 {
 }
 
 .result1_visible {
-
     display: revert;
 }
 
@@ -94,7 +93,7 @@ img {
                 url(images/results1_desktop.png) type("image/png") 1x,
                 url(images/results1_desktop_2x.png) type("image/png") 2x);
         background-position: bottom;
-        background-size: 80%;
+        background-size: 60%;
         background-repeat: no-repeat;
     }
 
@@ -104,7 +103,7 @@ img {
                 url(images/results2_desktop.png) type("image/png") 1x,
                 url(images/results2_desktop_2x.png) type("image/png") 2x);
         background-position: bottom;
-        background-size: 80%;
+        background-size: 60%;
         background-repeat: no-repeat;
     }
 
@@ -113,13 +112,4 @@ img {
         body {
             padding-top: 120px;
         }
-
-        h1 {
-            width: 800px;
-        }
-
-        p {
-            width: 800px;
-        }
-
     }
