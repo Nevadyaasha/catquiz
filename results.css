@@ -63,10 +63,6 @@ p {
     width: 300px;
 }
 
-img {
-    max-width: 90%;
-}
-
 @media (min-width: 390px) {
     h1 {
         width: 350px;
